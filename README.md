@@ -1,3 +1,6 @@
-#Simple Code Editor 
-Build Using the ACE CODE editor
-['https://github.com/ajaxorg/ace'](ACE CODE)
+
+#Simple Code Editor
+
+######ACE CODE EDITOR [OFFICIAL LINK](https://github.com/ajaxorg/ace "OFFICIAL LINK")
+
+###Sequence Diagram
