@@ -23,15 +23,14 @@ const createCheckBoxElement = async () => {
     const yourCheckbox = document.getElementById('Code Wrap');
 
     let temp = localStorage.getItem("editorWrap");
-    console.log("temp is:"+temp);
     if (temp) {
         let isTrueSet = (temp === 'true');
         if (isTrueSet) {
-            console.log("true hua");
             yourCheckbox.checked = true;
+            editor.session.setUseWrapMode(true);
         }else{
-            console.log("false hua");
             yourCheckbox.checked = false;
+            editor.session.setUseWrapMode(false);
         }
     }
 };
