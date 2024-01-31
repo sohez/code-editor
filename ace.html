@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- CODE EDITOR BUILD USING https://github.com/ajaxorg/ace 
+MODIFY BY SOHEL SAYYED -->
+<html lang="en">
+  <head>
+    <title>ACE - x - MCODO</title>
+    <link rel="stylesheet" href="./style/settings.css" />
+    <link rel="stylesheet" href="./style/editor.css" />
+
+    <script
+      src="./src-noconflict/ace.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="./src-noconflict/ext-language_tools.js"></script>
+  </head>
+  <header>
+    <button id="btn" type="button" onclick="settingShow()">Settings</button>
+  </header>
+  <body>
+
+    <div id="settings">
+
+      <!-- remove this line in prodction  -->
+      <button id="btn" type="button" onclick="settingHide()">X</button>
+
+      <br />
+      <div id="themeContainer"></div>
+      <br />
+      <div id="fontSizeContainer"></div>
+      <br />
+      <div id="checkBoxContainer"></div>
+    </div>
+
+    <div id="editor"></div>
+
+    <script src="./js/logix.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/font-size.js"></script>
+    <script src="./js/check-box.js"></script>
+
+    <script>
+    setLanguage("ace/mode/html");
+    //convert the html string into Base64.
+    let code = `PCFET0NUWVBFIGh0bWw+CjxodG1sPgogICAgPGhlYWQ+CiAgICAgICAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KICAgICAgICAgICAgLnRleHQtbGF5ZXIgewogICAgICAgICAgICAgICAgZm9udC1mYW1pbHk6IE1vbmFjbywgIkNvdXJpZXIgTmV3IiwgbW9ub3NwYWNlOwogICAgICAgICAgICAgICAgZm9udC1zaXplOiAxMnB4OwogICAgICAgICAgICAgICAgY3Vyc29yOiB0ZXh0OwogICAgICAgICAgICB9CiAgICAgICAgPC9zdHlsZT4KICAgIDwvaGVhZD4KICAgIDxib2R5PgogICAgICAgIDxoMSBzdHlsZT0iY29sb3I6cmVkIj5KdWh1IEtpbm5lcnM8L2gxPgogICAgPC9ib2R5Pgo8L2h0bWw+`;
+    setCode(code);
+    </script>
+  </body>
+</html>

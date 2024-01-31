@@ -1,0 +1,94 @@
+:root {
+  --bgColorDark: #252525;
+  --bgColorMedium: #313131fe;
+  --bgColorLight: #444444fe;
+  --textColor: #fff;
+}
+
+@font-face {
+  /* impot custom font  */
+  font-family: firaFont;
+  src: url("./font/fira_light.ttf");
+}
+
+html,
+body {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  background-color: var(--bgColorDark);
+  /* remove blue ton if clickerd  */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#btn {
+  /* kindly remove this on Prodction */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 2px solid black;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 4px 30px;
+}
+#btn:hover {
+    /* kindly remove this on Prodction */
+  background-color: rgb(213, 213, 213);
+}
+
+#settings {
+  /* display: none; */
+  font-family: firaFont;
+  z-index: 10;
+  background-color: var(--bgColorDark);
+  color: var(--textColor);
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 15px;
+}
+
+.setting_title {
+  font-size: large;
+}
+
+.custom-dropdown{
+  width: 97%;
+  display: inline-block;
+}
+
+.selected-option {
+  width: 98%;
+  padding: 10px;
+  background-color: var(--bgColorMedium);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.options {
+  width: 98%;
+  display: none;
+  list-style: none;
+  padding: 10px;
+  background-color: var(--bgColorMedium);
+  margin: 0px;
+  border-radius: 5px;
+}
+
+.options li{
+  border-radius: 5px;
+  background-color: var(--bgColorLight);
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
